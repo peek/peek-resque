@@ -15,9 +15,6 @@ module Glimpse
         {
           :jobs => {
             :failures => ::Resque::Failure.count
-          },
-          :workers => {
-            :working => 
           }
         }
       end
