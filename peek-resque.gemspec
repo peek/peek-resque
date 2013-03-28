@@ -1,22 +1,22 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'glimpse-resque/version'
+require 'peek-resque/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = 'glimpse-resque'
-  gem.version       = Glimpse::Resque::VERSION
+  gem.name          = 'peek-resque'
+  gem.version       = Peek::Resque::VERSION
   gem.authors       = ['Garrett Bjerkhoel']
   gem.email         = ['me@garrettbjerkhoel.com']
-  gem.description   = %q{Provide a glimpse into your Resque queues and workers.}
-  gem.summary       = %q{Provide a glimpse into your Resque queues and workers.}
-  gem.homepage      = 'https://github.com/dewski/glimpse-resque'
+  gem.description   = %q{Take a peek into your Resque queues and workers.}
+  gem.summary       = %q{Take a peek into your Resque queues and workers.}
+  gem.homepage      = 'https://github.com/peek/peek-resque'
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 
-  gem.add_dependency 'glimpse'
+  gem.add_dependency 'peek'
   gem.add_dependency 'resque'
 end

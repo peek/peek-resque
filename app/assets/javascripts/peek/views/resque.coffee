@@ -1,5 +1,5 @@
-$(document).on 'glimpse:update', ->
-  resqueContext = $('#glimpse-context-resque')
+$(document).on 'peek:update', ->
+  resqueContext = $('#peek-context-resque')
   if resqueContext.size()
     context = resqueContext.data('context')
     failures = context.jobs.failures

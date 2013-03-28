@@ -1,6 +1,6 @@
 require 'resque'
 
-module Glimpse
+module Peek
   module Views
     class Resque < View
       def initialize(options = {})

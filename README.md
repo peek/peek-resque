@@ -1,8 +1,8 @@
-# Glimpse::Resque
+# Peek::Resque
 
-Provide a glimpse into the current state of your Resque queues and workers.
+Take a peek into the current state of your Resque queues and workers.
 
-Things this glimpse view provides:
+Things this peek view provides:
 
 - The total number of queued jobs for each queue.
 - The total number of workers.
@@ -11,7 +11,7 @@ Things this glimpse view provides:
 
 Add this line to your application's Gemfile:
 
-    gem 'glimpse-resque'
+    gem 'peek-resque'
 
 And then execute:
 
@@ -19,21 +19,21 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install glimpse-resque
+    $ gem install peek-resque
 
 ## Usage
 
-Add the following to your `config/initializers/glimpse.rb`: 
+Add the following to your `config/initializers/peek.rb`: 
 
 ```ruby
-Glimpse.into Glimpse::Views::Resque
+Peek.into Peek::Views::Resque
 ```
 
 By default, it will track all queues. If you'd like to limit the number of queues
 it displays, you can pass in the `:queues` option:
 
 ```ruby
-Glimpse.into Glimpse::Views::Resque, :queues => ['notifications', 'backups']
+Peek.into Peek::Views::Resque, :queues => ['notifications', 'backups']
 ```
 
 ## Contributing
