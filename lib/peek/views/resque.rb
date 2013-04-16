@@ -8,7 +8,8 @@ module Peek
       end
 
       def job_count
-        @queues.collect { |queue| ::Resque.size(queue) }.inject(&:+)
+        lookup = @queues == ['*'] ? ::Resque.queues : @queues
+        lookup.collect { |queue| ::Resque.size(queue) }.inject(&:+)
       end
 
       def context
