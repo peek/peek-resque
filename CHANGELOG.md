@@ -9,3 +9,7 @@
 # 2.0.0
 
 - Conform to the new Peek API for rendering data in the view.
+
+# 2.0.1
+
+- Add auto-gravity for tooltips.
