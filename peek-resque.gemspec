@@ -17,6 +17,6 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 
-  gem.add_dependency 'peek', '>= 0.1.0'
-  gem.add_dependency 'resque'
+  gem.add_dependency 'peek', '~> 1.0'
+  gem.add_dependency 'resque', '~> 1.27'
 end

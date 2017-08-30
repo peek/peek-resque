@@ -13,3 +13,7 @@
 # 2.0.1
 
 - Add auto-gravity for tooltips.
+
+# 2.1.0
+
+- Update dependencies to work with latest resque and peek.
